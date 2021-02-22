@@ -1,0 +1,15 @@
+{
+  "theme": {
+    "slug": "blueprintresidential",
+    "name": "Blueprint Residential",
+    "author": "Jacob Stephens"
+  },
+  "dev": {
+    "browserSync": {
+      "live": true,
+      "proxyURL": "blueprint-residential.local",
+      "bypassPort": "8181",
+      "https": true
+    }
+  }
+}
