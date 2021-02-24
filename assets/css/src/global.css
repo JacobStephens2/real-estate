@@ -213,19 +213,22 @@ select {
 }
 
 .site-branding {
-	/* text-align: center; */
 	text-align: left;
-	padding: 60px 0 1.75em;
+	padding: 50px 0 0;
+	display: grid;
+	grid-template-columns: 2fr 3fr;
+	grid-template-areas: "title menu";
 }
 
 .site-title {
-	margin: 0 1em;
-	margin-left: 15%;
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
 	font-size: 38px;
 	font-weight: 700;
 	line-height: 1.2;
+	grid-area: title;
+	display: flex;
+	margin: 0 0 0 10%;
 }
 
 .site-title a {
@@ -376,13 +379,13 @@ select {
 ## Main navigation menu
 --------------------------------------------------------------*/
 .main-navigation {
-	display: block;
-	margin-left: 50%;
-	/* margin: 0 auto 2em; */
 	padding: 0 1em;
 	max-width: var(--content-width);
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
+	grid-area: menu;
+	display: flex;
+	justify-content: center;
 }
 
 .main-navigation a {
