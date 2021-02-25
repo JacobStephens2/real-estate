@@ -27,6 +27,7 @@ use function wp_nav_menu;
 class Component implements Component_Interface, Templating_Component_Interface {
 
 	const PRIMARY_NAV_MENU_SLUG = 'primary';
+	const FOOTER_NAV_MENU_SLUG  = 'footer';
 
 	/**
 	 * Gets the unique identifier for the theme component.
@@ -56,6 +57,8 @@ class Component implements Component_Interface, Templating_Component_Interface {
 		return array(
 			'is_primary_nav_menu_active' => array( $this, 'is_primary_nav_menu_active' ),
 			'display_primary_nav_menu'   => array( $this, 'display_primary_nav_menu' ),
+			'is_footer_nav_menu_active' => array( $this, 'is_footer_nav_menu_active' ),
+			'display_footer_nav_menu'   => array( $this, 'display_footer_nav_menu' ),
 		);
 	}
 
@@ -66,6 +69,7 @@ class Component implements Component_Interface, Templating_Component_Interface {
 		register_nav_menus(
 			array(
 				static::PRIMARY_NAV_MENU_SLUG => esc_html__( 'Primary', 'wp-rig' ),
+				static::FOOTER_NAV_MENU_SLUG  => esc_html__( 'Footer', 'wp-rig' ),
 			)
 		);
 	}
@@ -113,6 +117,9 @@ class Component implements Component_Interface, Templating_Component_Interface {
 	public function is_primary_nav_menu_active() : bool {
 		return (bool) has_nav_menu( static::PRIMARY_NAV_MENU_SLUG );
 	}
+	public function is_footer_nav_menu_active() : bool {
+		return (bool) has_nav_menu( static::FOOTER_NAV_MENU_SLUG );
+	}
 
 	/**
 	 * Displays the primary navigation menu.
@@ -126,6 +133,15 @@ class Component implements Component_Interface, Templating_Component_Interface {
 		}
 
 		$args['theme_location'] = static::PRIMARY_NAV_MENU_SLUG;
+
+		wp_nav_menu( $args );
+	}
+	public function display_footer_nav_menu( array $args = array() ) {
+		if ( ! isset( $args['container'] ) ) {
+			$args['container'] = '';
+		}
+
+		$args['theme_location'] = static::FOOTER_NAV_MENU_SLUG;
 
 		wp_nav_menu( $args );
 	}
