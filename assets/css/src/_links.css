@@ -5,7 +5,8 @@
 --------------------------------------------------------------*/
 /* stylelint-disable */
 a {
-	color: var(--color-link);
+	color: var(--global-font-color);
+	text-decoration: none;
 }
 /* stylelint-enable */
 

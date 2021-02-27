@@ -1,0 +1,87 @@
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+
+.single-product .product .single_add_to_cart_button.button {
+	background-color: var(--color-theme-grey);
+	color: var(--color-theme-black);
+}
+
+.single-product .product .single_add_to_cart_button.button {
+	background-color: var(--color-theme-grey);
+	color: var(--color-theme-black);
+}
+
+.woocommerce .product .add_to_cart_button.button {
+	background-color: var(--color-theme-grey);
+	color: var(--color-theme-black);
+}
+
+.single_add_to_cart_button,
+.wp-block-button__link {
+	border-radius: 0;
+	color: var(--global-font-color);
+	background-color: transparent;
+}
+
+.single-product .product .single_add_to_cart_button.button,
+.single_add_to_cart_button .button,
+.woocommerce .product .add_to_cart_button.button {
+	border: solid 2px var(--color-theme-black);
+	border-radius: 0;
+	color: var(--global-font-color);
+	background-color: transparent;
+}
+
+.add_to_cart_button {
+	border: solid 2px var(--color-theme-black);
+}
+
+.wp-block-button__link:hover {
+	border-radius: 0;
+	color: transparent;
+	background-color: var(--global-font-color);
+}
+
+.add_to_cart_button:hover {
+	border: solid 2px transparent;
+	color: var(--color-theme-white);
+}
+
+.wc-block-grid__product-add-to-cart {
+	text-transform: uppercase;
+}
+
+.woocommerce ul.products li.product .button {
+	background-color: transparent;
+	border-radius: 0;
+	border: 2px solid var(--color-theme-grey);
+	color: var(--color-theme-grey);
+}
+
+.woocommerce ul.products li.product .button:hover {
+	background-color: var(--color-theme-grey);
+	border-radius: 0;
+	border: 2px solid transparent;
+	color: var(--color-theme-white);
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-category__title,
+.woocommerce ul.products li.product .woocommerce-loop-product__title,
+.woocommerce ul.products li.product h3 {
+	line-height: 1.3;
+}
+
+h2 {
+	letter-spacing: 2px;
+}
+
+.entry-content > *,
+.entry-summary > *,
+.page-content > * {
+	max-width: var(--wide-content-width);
+}
+
+.woocommerce .quantity .qty {
+	border-radius: 0;
+}

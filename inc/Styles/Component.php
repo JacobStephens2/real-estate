@@ -306,11 +306,14 @@ class Component implements Component_Interface, Templating_Component_Interface {
 				},
 			),
 			'wp-rig-front-page' => array(
-				'file' => 'front-page.min.css',
+				'file'             => 'front-page.min.css',
 				'preload_callback' => function() {
 					global $template;
 					return 'front-page.php' === basename( $template );
 				},
+			),
+			'wp-rig-services' => array(
+				'file' => 'services.min.css',
 			),
 		);
 
@@ -359,7 +362,7 @@ class Component implements Component_Interface, Templating_Component_Interface {
 		}
 
 		$google_fonts = array(
-			'Source Sans Pro' => array( '300', '600' ),
+			'Source Sans Pro'  => array( '300', '400', '600' ),
 			'Crimson Text'     => array( '400', '400i', '600', '600i' ),
 		);
 

@@ -382,7 +382,7 @@ select {
 ## Main navigation menu
 --------------------------------------------------------------*/
 .main-navigation {
-	padding: 0 1em;
+	padding: 0 3em 0 1em;
 	max-width: var(--content-width);
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
@@ -397,6 +397,7 @@ select {
 	padding: 0.5em 1em 0.5em 0;
 	text-decoration: none;
 	color: var(--global-font-color);
+	font-weight: 400;
 }
 
 .main-navigation a:hover,
