@@ -115,3 +115,15 @@ ins {
 big {
 	font-size: 125%;
 }
+
+.inline {
+	display: inline;
+}
+
+.woocommerce-Price-amount {
+	color: var(--global-font-color);
+}
+
+.global-font-color {
+	color: var(--global-font-color);
+}

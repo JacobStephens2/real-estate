@@ -15,6 +15,7 @@
 # Content navigation
 # Footer
 # Infinite scroll
+# WooCommerce
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -231,7 +232,7 @@ select {
 	line-height: 1.2;
 	grid-area: title;
 	display: flex;
-	margin: 0 0 0 10%;
+	margin: 0 0 0 7%;
 }
 
 .site-title a {
@@ -382,7 +383,7 @@ select {
 ## Main navigation menu
 --------------------------------------------------------------*/
 .main-navigation {
-	padding: 0 3em 0 1em;
+	padding: 0 1em 0 0;
 	max-width: var(--content-width);
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
@@ -600,4 +601,39 @@ select {
 were hidden (via .neverending) before. */
 .infinity-end.neverending .site-footer {
 	display: block;
+}
+
+/*--------------------------------------------------------------
+# WooCommerce
+--------------------------------------------------------------*/
+
+a.checkout-button.button.alt.wc-forward {
+	background-color: var(--color-theme-grey);
+	color: var(--color-theme-white);
+	border-radius: 0;
+}
+
+a.checkout-button.button.alt.wc-forward:hover {
+	background-color: var(--color-theme-black);
+}
+
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button {
+	border-radius: 0;
+}
+
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
+	background-color: var(--color-theme-grey);
+}
+
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover {
+	background-color: var(--color-theme-black);
 }
