@@ -32,6 +32,33 @@
  * .wp-block-archives
  */
 
+/* .wp-block-quote {
+	border-left: 0.1em solid var(--color-theme-black);
+} */
+
+.wp-block-button__link {
+	border-radius: 0;
+	color: var(--color-theme-black);
+	background-color: transparent;
+	border: 2px solid var(--color-theme-black);
+}
+
+.wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link {
+	color: var(--color-theme-black);
+}
+
+.wp-block-button__link:hover {
+	border-radius: 0;
+	color: transparent;
+	background-color: var(--color-theme-black);
+	border: 2px solid transparent;
+}
+
+.wc-block-grid__product-add-to-cart.wp-block-button
+	.wp-block-button__link:hover {
+	color: var(--color-theme-white);
+}
+
 .wp-block-button.is-style-outline:hover {
 	background-color: var(--global-font-color);
 }
@@ -58,9 +85,9 @@
 	}
 }
 
-.wp-block-quote:not(.is-large):not(.is-style-large) {
+/* .wp-block-quote:not(.is-large):not(.is-style-large) {
 	border-left-color: var(--color-quote-border);
-}
+} */
 
 .wp-block-quote__citation,
 .wp-block-quote cite,

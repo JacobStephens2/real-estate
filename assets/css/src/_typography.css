@@ -52,7 +52,7 @@ q {
 }
 
 blockquote {
-	border-left: 4px solid var(--color-quote-border);
+	border-left: 0.1em solid var(--color-quote-border);
 	margin: 0;
 }
 
@@ -111,8 +111,7 @@ ins {
 	background: #fff9c0;
 	text-decoration: none;
 }
-
-big {
+.big {
 	font-size: 125%;
 }
 
@@ -126,4 +125,8 @@ big {
 
 .global-font-color {
 	color: var(--global-font-color);
+}
+
+.white-text {
+	color: var(--color-theme-white);
 }
