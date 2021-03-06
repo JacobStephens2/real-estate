@@ -52,7 +52,7 @@ q {
 }
 
 blockquote {
-	border-left: 0.1em solid var(--color-quote-border);
+	border-left: 0;
 	margin: 0;
 }
 
@@ -129,4 +129,22 @@ ins {
 
 .white-text {
 	color: var(--color-theme-white);
+}
+
+.white-text:visited {
+	color: var(--color-theme-white);
+}
+
+.white-text:hover {
+	color: var(--color-link-active);
+}
+
+.padding-left-24px {
+	padding-left: 24px;
+}
+
+@media (--content-query) {
+	.padding-left-24px {
+		padding-left: 0;
+	}
 }

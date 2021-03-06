@@ -32,9 +32,9 @@
  * .wp-block-archives
  */
 
-/* .wp-block-quote {
-	border-left: 0.1em solid var(--color-theme-black);
-} */
+.wp-block-quote {
+	border-left: 0;
+}
 
 .wp-block-button__link {
 	border-radius: 0;

@@ -118,7 +118,7 @@ input[type="reset"],
 input[type="submit"] {
 	border: 1px solid;
 	border-color: var(--border-color-light) var(--border-color-light) #bbb;
-	border-radius: 3px;
+	border-radius: 0px;
 	background: #eee;
 	color: rgba(0, 0, 0, 0.8);
 	font-size: 0.75rem;
@@ -208,8 +208,6 @@ select {
 	margin: 0 auto;
 }
 
-/* e */
-
 .custom-logo-link {
 	display: inline-block;
 	margin: 0 auto 1em;
@@ -226,7 +224,7 @@ select {
 .site-title {
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
-	font-size: 38px;
+	font-size: var(--font-size-large);
 	font-weight: 300;
 	letter-spacing: 8px;
 	line-height: 1.2;
