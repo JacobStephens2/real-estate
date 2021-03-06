@@ -635,3 +635,18 @@ a.checkout-button.button.alt.wc-forward:hover {
 .woocommerce input.button.alt:hover {
 	background-color: var(--color-theme-black);
 }
+
+/*--------------------------------------------------------------
+# Other
+--------------------------------------------------------------*/
+
+.sub-menu {
+	list-style-type: none;
+	font-weight: 400;
+	padding-left: 0;
+}
+
+.menu {
+	list-style-type: none;
+	font-weight: 600;
+}

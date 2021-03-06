@@ -210,3 +210,7 @@ ul.wp-block-latest-posts.is-grid.alignfull {
 		grid-template-columns: repeat(9, 1fr);
 	}
 }
+
+.wp-block-column:not(:first-child) {
+	margin-left: 0;
+}

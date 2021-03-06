@@ -57,8 +57,8 @@ class Component implements Component_Interface, Templating_Component_Interface {
 		return array(
 			'is_primary_nav_menu_active' => array( $this, 'is_primary_nav_menu_active' ),
 			'display_primary_nav_menu'   => array( $this, 'display_primary_nav_menu' ),
-			'is_footer_nav_menu_active' => array( $this, 'is_footer_nav_menu_active' ),
-			'display_footer_nav_menu'   => array( $this, 'display_footer_nav_menu' ),
+			'is_footer_nav_menu_active'  => array( $this, 'is_footer_nav_menu_active' ),
+			'display_footer_nav_menu'    => array( $this, 'display_footer_nav_menu' ),
 		);
 	}
 
@@ -102,7 +102,7 @@ class Component implements Component_Interface, Templating_Component_Interface {
 		}
 
 		// Add the dropdown for items that have children.
-		if ( ! empty( $item->classes ) && in_array( 'menu-item-has-children', $item->classes ) ) {
+		if ( ! empty( $item->classes ) && in_array( 'menu-item-has-children', $item->classes, true ) ) {
 			return $item_output . '<span class="dropdown"><i class="dropdown-symbol"></i></span>';
 		}
 
@@ -117,6 +117,11 @@ class Component implements Component_Interface, Templating_Component_Interface {
 	public function is_primary_nav_menu_active() : bool {
 		return (bool) has_nav_menu( static::PRIMARY_NAV_MENU_SLUG );
 	}
+	/**
+	 * Checks whether the footer navigation menu is active.
+	 *
+	 * @return bool True if the primary navigation menu is active, false otherwise.
+	 */
 	public function is_footer_nav_menu_active() : bool {
 		return (bool) has_nav_menu( static::FOOTER_NAV_MENU_SLUG );
 	}
@@ -133,20 +138,22 @@ class Component implements Component_Interface, Templating_Component_Interface {
 		}
 
 		$args['theme_location'] = static::PRIMARY_NAV_MENU_SLUG;
-		$args['menu_class'] = 'menu';
+		$args['menu_class']     = 'menu';
 
 		wp_nav_menu( $args );
 	}
+	/**
+	 * Displays the primary navigation menu.
+	 *
+	 * @param array $args Optional. Array of arguments. See `wp_nav_menu()` documentation for a list of supported
+	 *                    arguments.
+	 */
 	public function display_footer_nav_menu( array $args = array() ) {
 		if ( ! isset( $args['container'] ) ) {
 			$args['container'] = '';
 		}
 
-		$args['theme_location'] = static::FOOTER_NAV_MENU_SLUG;
-		// $args['menu_class'] = 'footer-menu';
-		// $args['before'] = 'before';
-		// $args['link_before'] = 'link_before';
-		// $args['items_wrap'] = 'discard';
+		$args['theme_location']  = static::FOOTER_NAV_MENU_SLUG;
 
 		wp_nav_menu( $args );
 	}
