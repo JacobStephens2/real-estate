@@ -133,6 +133,7 @@ class Component implements Component_Interface, Templating_Component_Interface {
 		}
 
 		$args['theme_location'] = static::PRIMARY_NAV_MENU_SLUG;
+		$args['menu_class'] = 'menu';
 
 		wp_nav_menu( $args );
 	}
@@ -142,6 +143,10 @@ class Component implements Component_Interface, Templating_Component_Interface {
 		}
 
 		$args['theme_location'] = static::FOOTER_NAV_MENU_SLUG;
+		// $args['menu_class'] = 'footer-menu';
+		// $args['before'] = 'before';
+		// $args['link_before'] = 'link_before';
+		// $args['items_wrap'] = 'discard';
 
 		wp_nav_menu( $args );
 	}
