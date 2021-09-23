@@ -38,6 +38,7 @@ wp_rig()->print_styles( 'wp-rig-content', 'wp-rig-services' );
 			get_template_part( 'template-parts/content/error' );
 		}
 		?>
+		<div style="height: 125px;"></div>
 	</main><!-- #primary -->
 <?php
 get_sidebar();

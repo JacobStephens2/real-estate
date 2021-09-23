@@ -9,14 +9,14 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package wp_rig
+ * @package blueprintresidential_1_4
  */
 
 namespace WP_Rig\WP_Rig;
 
 get_header();
 
-wp_rig()->print_styles( 'wp-rig-content', 'wp-rig-services' );
+blueprintresidential_1_4()->print_styles( 'blueprintresidential_1_4-content' );
 
 ?>
 	<main id="primary" class="site-main">

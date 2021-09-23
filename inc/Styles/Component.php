@@ -315,6 +315,9 @@ class Component implements Component_Interface, Templating_Component_Interface {
 			'wp-rig-services' => array(
 				'file' => 'services.min.css',
 			),
+			'wp-rig-single-product' => array(
+				'file' => 'single-product.min.css',
+			),
 		);
 
 		/**

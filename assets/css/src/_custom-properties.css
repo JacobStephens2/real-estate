@@ -6,8 +6,10 @@
  **/
 
 :root {
-	--content-width: 45rem;
+	--content-width: 60rem;
 	--wide-content-width: 55rem;
+	--moderate-content-width: 50rem;
+	--narrow-content-width: 40rem;
 	--dropdown-symbol-width: 0.7em;
 
 	/* Typography */
@@ -19,9 +21,12 @@
 
 	/* Custom editor font sizes */
 	--font-size-small: calc(16 / var(--global-font-size) * 1rem);
+	--font-size-medium-small: calc(20 / var(--global-font-size) * 1rem);
 	--font-size-regular: calc(var(--global-font-size) / 16 * 1rem);
+	--font-size-regular-large: calc(30 / var(--global-font-size) * 1rem);
 	--font-size-large: calc(36 / var(--global-font-size) * 1rem);
 	--font-size-larger: calc(48 / var(--global-font-size) * 1rem);
+	--font-size-larger2: calc(70 / var(--global-font-size) * 1rem);
 
 	/* Colors */
 	--global-font-color: #333;
@@ -39,9 +44,13 @@
 	--color-theme-red: #c0392b;
 	--color-theme-green: #27ae60;
 	--color-theme-blue: #2980b9;
-	--color-theme-yellow: #f1c40f;
+	--color-theme-yellow: #bdaa66;
 	--color-theme-black: #333;
-	--color-theme-grey: #625e5c;
+	--color-theme-warm-black: #1f1f1f;
+	--color-theme-grey: #5c5c5c;
+	--color-theme-light-grey: #f0f0f0;
+	--color-theme-medium-grey: #c3c3c2;
+	--color-theme-light-grey-darkened: #d8d5d5;
 	--color-theme-white: #ecf0f1;
 	--color-custom-daylight: #97c0b7;
 	--color-custom-sun: #eee9d1;

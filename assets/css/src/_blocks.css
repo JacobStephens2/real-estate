@@ -41,6 +41,7 @@
 	color: var(--color-theme-black);
 	background-color: transparent;
 	border: 2px solid var(--color-theme-black);
+	font-size: 1em;
 }
 
 .wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link {
@@ -209,8 +210,4 @@ ul.wp-block-latest-posts.is-grid.alignfull {
 	.wp-block-gallery.columns-9 {
 		grid-template-columns: repeat(9, 1fr);
 	}
-}
-
-.wp-block-column:not(:first-child) {
-	margin-left: 0;
 }

@@ -26,9 +26,9 @@ h6 {
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
 	clear: both;
-	text-transform: uppercase;
-	font-weight: 600;
-	letter-spacing: 5px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	line-height: 1;
 }
 
 .entry-title-singular,
@@ -147,4 +147,26 @@ ins {
 	.padding-left-24px {
 		padding-left: 0;
 	}
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
+	text-transform: uppercase;
+}
+
+a.button.product_type_simple {
+	text-transform: uppercase;
+}
+
+#light-text {
+	color: var(--color-theme-light-grey);
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-category__title,
+.woocommerce ul.products li.product .woocommerce-loop-product__title,
+.woocommerce ul.products li.product h3 {
+	font-size: 0.7em;
 }

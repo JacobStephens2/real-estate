@@ -196,7 +196,7 @@ select {
 --------------------------------------------------------------*/
 
 .site-header {
-	padding-bottom: 1em;
+	padding-bottom: 0;
 }
 
 .header-image {
@@ -215,7 +215,7 @@ select {
 
 .site-branding {
 	text-align: left;
-	padding: 50px 0 0;
+	padding: 25px 0 0;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-areas: "title menu";
@@ -225,8 +225,8 @@ select {
 	font-family: var(--highlight-font-family);
 	font-stretch: condensed;
 	font-size: var(--font-size-large);
-	font-weight: 300;
-	letter-spacing: 8px;
+	font-weight: 400;
+	letter-spacing: 2px;
 	line-height: 1.2;
 	grid-area: title;
 	display: flex;
@@ -252,6 +252,12 @@ select {
 /*--------------------------------------------------------------
 ## Basic navigation menus - handles submenu and small screen toggle
 --------------------------------------------------------------*/
+
+.menu {
+	list-style-type: none;
+	font-weight: 300;
+}
+
 .nav--toggle-small .menu-toggle {
 	display: block;
 	margin: 1.2em auto;
@@ -399,16 +405,6 @@ select {
 	font-weight: 400;
 }
 
-.main-navigation a:hover,
-.main-navigation a:focus {
-	text-decoration: underline;
-}
-
-.main-navigation .current-menu-item > a,
-.main-navigation .current-menu-ancestor > a {
-	font-weight: 600;
-}
-
 .main-navigation ul {
 	display: block;
 	list-style: none;
@@ -420,9 +416,13 @@ select {
 	padding-left: 1em;
 }
 
+#primary-menu {
+	font-size: var(--font-size-medium-small);
+}
+
 @media (--wide-menu-query) {
 	.main-navigation ul li a {
-		padding: 0.4em 0.5em;
+		padding: 0.2em 0.5em;
 	}
 
 	.main-navigation ul li {
@@ -583,6 +583,23 @@ select {
 	text-align: center;
 }
 
+.elementor-container.elementor-column-gap-default {
+	font-size: var(--font-size-medium-small);
+}
+
+ul#menu-footer-column-1 {
+	padding-left: 0;
+}
+ul#menu-footer-column-2 {
+	padding-left: 0;
+}
+ul#menu-footer-column-3 {
+	padding-left: 0;
+}
+ul#menu-footer-column-4 {
+	padding-left: 0;
+}
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
@@ -642,11 +659,497 @@ a.checkout-button.button.alt.wc-forward:hover {
 
 .sub-menu {
 	list-style-type: none;
-	font-weight: 400;
+	font-weight: 300;
 	padding-left: 0;
 }
 
-.menu {
-	list-style-type: none;
+.margin-top-0 {
+	margin-top: 0;
+}
+
+.margin-top-10 {
+	margin-top: 10px;
+}
+
+.margin-bottom-0 {
+	margin-bottom: 0;
+}
+
+.margin-bottom-10 {
+	margin-bottom: 10;
+}
+
+.bold {
+	font-weight: 400;
+}
+
+.ninja-forms-field {
+	text-transform: uppercase;
+}
+
+.nf-form-content .list-select-wrap .nf-field-element > div,
+.nf-form-content input:not([type="button"]),
+.nf-form-content textarea {
+	background: white;
+	border: 2px solid var(--color-theme-medium-grey);
+}
+
+.nf-form-content .list-select-wrap .nf-field-element > div:focus,
+.nf-form-content input:not([type="button"]):focus,
+.nf-form-content textarea:focus {
+	background: #d8d5d5;
+}
+
+.ninja-forms-field.nf-element {
+	background: white;
+	border: 2px solid var(--color-theme-medium-grey);
+}
+
+.ninja-forms-field[type="text"] {
+	height: 50px;
+}
+.ninja-forms-field[type="email"] {
+	height: 50px;
+}
+.ninja-forms-field[type="button"] {
+	height: 40px;
+	background: var(--color-theme-black);
+	font-size: var(--font-size-medium-small);
+	color: white;
+	border: 2px solid var(--color-theme-black);
+}
+.ninja-forms-field[type="button"]:hover {
+	background: white;
+	border: 2px solid var(--color-theme-black);
+	color: var(--color-theme-black);
+	transition: 0.5s;
+}
+select.ninja-forms-field.nf-element {
+	height: 50px;
+	padding-left: 0.5em;
+}
+
+#max-width-100 {
+	max-width: 100%;
+}
+
+#margin-top-0 {
+	margin-top: 0;
+}
+
+figure.wp-block-image.size-large.margin-top-0\, .margin-bottom-0 {
+	margin-top: 0;
+}
+
+/* Highlight using list element */
+.primary-menu-container li.current_page_item {
 	font-weight: 600;
+}
+
+/* Highlight using link element */
+.primary-menu-container li.current_page_item a {
+	font-weight: 800;
+}
+
+body {
+	font-weight: 300;
+}
+
+a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
+	font-weight: 300;
+}
+
+a.button.product_type_simple {
+	font-weight: 300;
+	position: absolute;
+	bottom: 0;
+}
+
+li.product.type-product {
+	height: 545px;
+}
+
+#move_text_down1 {
+	position: relative;
+	top: 4em;
+}
+#move_text_down2 {
+	position: relative;
+	top: 4em;
+}
+#move_text_down3 {
+	position: relative;
+	top: 4em;
+}
+.max_height {
+	max-height: 300px !important;
+}
+
+p.advgb-image-subtitle {
+	position: relative;
+	top: 65px;
+}
+
+.move_left {
+	position: relative;
+	left: -60px;
+}
+
+@media (max-width: 880px) {
+	.move_left {
+		position: block;
+		left: 0;
+	}
+}
+
+.sign_up_spacing {
+	line-height: 50px;
+	top: 67px;
+}
+
+.advgb-infobox-icon-container {
+	display: none !important;
+}
+
+.grey_column_bar {
+	height: 17px;
+	background-color: var(--color-theme-grey);
+	color: var(--color-theme-grey);
+	width: 100%;
+	margin: 200px 0 30px;
+}
+
+.padding_left_right_10 {
+	padding-left: 10% !important;
+	padding-right: 10% !important;
+	margin-bottom: 20px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#slider_463 {
+	height: 340px;
+}
+
+.image_row {
+	max-height: 340px;
+}
+
+.column66_margin_left {
+	margin-left: 5.9rem !important;
+}
+
+#columns_width {
+	margin: 0 5%;
+}
+
+.br_gold {
+	color: var(--color-theme-primary);
+	display: inline;
+}
+
+.larger_font {
+	font-size: var(--font-size-larger2);
+}
+
+.li_custom {
+	margin-top: 15px;
+	font-size: var(--font-size-regular-large);
+}
+
+.li_custom_regular {
+	margin-top: 10px;
+}
+
+.margin_left_right {
+	margin: 0 60px;
+}
+
+.white_link {
+	color: var(--color-theme-white);
+}
+
+.white_link:visited {
+	color: var(--color-theme-white);
+}
+
+.white_link:hover {
+	color: var(--color-theme-primary);
+}
+
+.elementor-582
+	.elementor-element.elementor-element-6ba6308
+	.elementor-spacer-inner {
+	height: 15px;
+}
+
+.elementor-582 .elementor-element.elementor-element-eebff37 .elementor-divider {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.column_gray_bar_right {
+	border-right: 2px solid var(--color-theme-light-grey-darkened);
+	margin-right: 60px;
+}
+
+.column_gray_bar_left {
+	border-left: 2px solid var(--color-theme-light-grey-darkened);
+	padding-left: 60px;
+}
+
+.padding_left_60 {
+	padding-left: 60px;
+}
+
+.max_height_300px {
+	max-height: 300px;
+}
+
+.max_height_300px .wp-block-cover__image-background {
+	max-height: 300px;
+}
+
+.wp-image-1039 {
+	max-height: 300px;
+}
+
+.narrow_text p {
+	margin-right: 30%;
+}
+
+.thin {
+	font-weight: 300;
+	display: inline;
+}
+
+.thin-block {
+	font-weight: 300;
+	display: block;
+}
+
+.larger_angle_left {
+	display: inline;
+	font-size: var(--font-size-larger);
+	position: absolute;
+	bottom: 11px;
+}
+
+.larger_angle_right {
+	display: inline;
+	font-size: var(--font-size-larger);
+	position: absolute;
+	bottom: 2px;
+}
+
+.position_relative {
+	position: relative;
+}
+
+.wp-block-button__link {
+	padding: 0.337em 1.333em;
+}
+
+.grey {
+	color: var(--color-theme-medium-grey);
+	display: inline;
+}
+
+.grey_text {
+	color: var(--color-theme-medium-grey);
+}
+
+.column_left_grey_bar {
+	border-left: 5px solid var(--color-theme-medium-grey);
+	padding-left: 90px;
+}
+
+.column_left_grey_bar_thin {
+	border-left: 3px solid var(--color-theme-black);
+	padding-left: 70px;
+}
+
+.grid-container2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas:
+		"left_image right_top_image"
+		"left_image right_image";
+	max-height: 750px;
+	grid-gap: 30px;
+	max-width: 1200px;
+	min-height: 780px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.move_up {
+	position: relative;
+	bottom: 100px;
+}
+
+.move_up_170px {
+	position: relative;
+	bottom: 170px;
+}
+
+.move_up_more {
+	position: relative;
+	bottom: 175px;
+}
+
+.grey_background {
+	background: var(--color-theme-medium-grey);
+}
+
+.margin_left {
+	margin-left: 15%;
+	margin-right: 30px;
+}
+
+.margin_right {
+	margin-right: 15%;
+	margin-left: 30px;
+}
+
+.ngg-galleryoverview.default-view {
+	position: relative;
+	bottom: 140px;
+}
+
+#nf-form-5-cont {
+	position: relative;
+	bottom: 140px;
+}
+
+.position_dream_big {
+	position: relative;
+	bottom: 75px;
+}
+
+.grid_container_row {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: "left_image center_image right_image";
+	height: 400px;
+	grid-gap: 30px;
+}
+
+.grid_container_row2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: "left_image center_image right_image";
+	height: 300px;
+	grid-gap: 30px;
+}
+
+.grid_container_row4 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-areas: "left_image center_left_image center_right_image right_image";
+	height: 300px;
+	grid-gap: 30px;
+	margin-bottom: 75px;
+}
+
+.grid_container_row5 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "left_image right_image";
+	height: 200px;
+	grid-gap: 30px;
+	max-width: 560px;
+}
+
+.wp-block-separator.has-background:not(.is-style-dots) {
+	height: 5px;
+	color: var(--color-theme-black);
+}
+
+.grey_separator {
+	display: block;
+	width: 100%;
+	height: 14px;
+	background-color: var(--color-theme-black);
+	margin-bottom: 27px;
+}
+
+.narrow_content {
+	width: var(--narrow-content-width);
+}
+
+.padding_left {
+	padding-left: 110px;
+}
+
+.padding_left_less {
+	padding-left: 70px;
+}
+
+.grey_box_left {
+	background-color: var(--color-theme-black);
+	height: 140px;
+	width: 120px;
+}
+
+.font_weight_500 {
+	font-weight: 400;
+}
+
+.margin_business_hours {
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+.margin_contact_p {
+	margin: 15px 0;
+}
+
+#nf-field-113-wrap {
+	margin-top: 15px;
+}
+
+.tabs.wc-tabs {
+	display: none;
+}
+
+.added_to_cart.wc-forward {
+	top: 32px;
+	position: relative;
+}
+
+.about_house {
+	height: 300px;
+}
+
+.hidden-button {
+	display: none;
+}
+
+/* Small view */
+@media (max-width: 781px) {
+	.main-navigation {
+		display: block;
+	}
+	.grid_container_row {
+		grid-template-columns: 1fr;
+		grid-gap: 0;
+	}
+	.real-estate-small {
+		display: none;
+	}
+	.move_up_more {
+		bottom: 100px;
+	}
+	#nf-form-5-cont,
+	.ngg-galleryoverview.default-view {
+		bottom: 120px;
+	}
+	.about_house {
+		height: 150px;
+	}
+	.hidden-left-column {
+		display: none;
+	}
 }

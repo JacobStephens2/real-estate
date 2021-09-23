@@ -106,6 +106,8 @@
       "declaration-colon-newline-after": null,
       "value-list-comma-newline-after": null,
       "rule-empty-line-before": null,
+      "selector-list-comma-newline-after": null,
+      "indentation": null,
       "comment-empty-line-before": null
     }
   },

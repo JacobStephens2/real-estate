@@ -16,7 +16,7 @@ namespace WP_Rig\WP_Rig;
 
 get_header();
 
-wp_rig()->print_styles( 'wp-rig-content', 'wp-rig-services' );
+wp_rig()->print_styles( 'wp-rig-content', 'wp-rig-single-product' );
 
 ?>
 	<main id="primary" class="site-main">
@@ -38,6 +38,7 @@ wp_rig()->print_styles( 'wp-rig-content', 'wp-rig-services' );
 			get_template_part( 'template-parts/content/error' );
 		}
 		?>
+		<div style="height: 125px;"></div>
 	</main><!-- #primary -->
 <?php
 get_sidebar();
